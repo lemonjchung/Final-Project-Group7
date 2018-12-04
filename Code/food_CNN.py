@@ -116,6 +116,7 @@ loss_list = []
 print('Training...')
 
 for epoch in range(num_epochs):
+    epoch_loss = []
     for i, (data, target) in enumerate(train_loader):
         images = Variable(data).cuda()
         labels = Variable(target).cuda()
@@ -130,16 +131,19 @@ for epoch in range(num_epochs):
         if (i + 1) % 100 == 0:
             print('Epoch [%d/%d], Iter [%d/%d] Loss: %.4f'
                   % (epoch + 1, num_epochs, i + 1, num_images // batch_size, loss.item()))
-    loss_list.append(loss.item())
+        epoch_loss.append(loss.item())
+
+    # add average loss for the epoch to list of average loss values
+    loss_list.append(np.mean(epoch_loss))
 
 end = time.time()
 
-# plot loss against epoch
+# plot average loss for each epoch
 plt.figure(0)
 plt.plot(epoch_list, loss_list)
-plt.title('loss value by epoch')
+plt.title('average loss by epoch')
 plt.xlabel('epoch #')
-plt.ylabel('loss value')
+plt.ylabel('average loss value')
 
 print("training time:", '%.2f' % (end - start), 'seconds')
 print('-------------------------------------------------------')
