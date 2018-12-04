@@ -6,16 +6,20 @@
 - Nividia GPU 
 
 ## How to run the network using the preprocessed data
-1. Install h5py:
+1. Upgrade pip command:
+```
+sudo pip install --upgrade pip
+```
+2. Install h5py:
 ```
 pip3 install h5py
 ```
-2. Run the following commands to download training and testing datasets:
+3. Run the following commands to download training and testing datasets:
 ```
 wget https://s3.amazonaws.com/food-classification-datasets/food_train.h5
 wget https://s3.amazonaws.com/food-classification-datasets/food_test.h5
 ```
-3.Run the following command to train the CNN model and make predictions on test images:
+4. Run the following command to train the CNN model and make predictions on test images:
 ```
 python3 food_CNN.py
 ```
