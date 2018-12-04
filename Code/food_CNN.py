@@ -138,13 +138,6 @@ for epoch in range(num_epochs):
 
 end = time.time()
 
-# plot average loss for each epoch
-plt.figure(0)
-plt.plot(epoch_list, loss_list)
-plt.title('average loss by epoch')
-plt.xlabel('epoch #')
-plt.ylabel('average loss value')
-
 print("training time:", '%.2f' % (end - start), 'seconds')
 print('-------------------------------------------------------')
 # -----------------------------------------------------------------------------------
@@ -201,6 +194,13 @@ confusion.columns = target_classes
 confusion.index = target_classes
 print('Confusion Matrix')
 print(confusion)
+
+# plot average loss for each epoch
+plt.figure(0)
+plt.plot(epoch_list, loss_list)
+plt.title('average loss by epoch')
+plt.xlabel('epoch #')
+plt.ylabel('average loss value')
 
 # show 10 test images with target class & top 3 predicted outputs
 for i, (output, label) in enumerate(zip(outputs.data.cpu(), labels)):
