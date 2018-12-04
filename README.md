@@ -4,37 +4,39 @@
 
 ## Guide
 
-* Group-Proposal
+Group-Proposal
 
-In the folder, the group proposal document is shown.
+* In the folder, the group proposal document is shown.
 
-* Final-Group-Project-Report
+Final-Group-Project-Report
 
-This folder contains the group project report pdf.
+* This folder contains the group project report pdf.
 
-* Final-Group-Presentation
+Final-Group-Presentation
 
-This folder includes the final presentation document.
+* This folder includes the final presentation document.
 
-* Code
+Code
 
-This folder contains all codes for the final projects
+* This folder contains all codes for the final projects
 
     food_CNN.py         - main code for final project
 
     create_dataset.py   - data preprocessing code 
 
     README.md           - the guide how it works
+    
+* Further instructions to run this code are found in this folder
 
-* joanne-chung-individual-project
+joanne-chung-individual-project
 
-This folder contains the description of joanne's work.
+* This folder contains the description of joanne's work.
 
-* mclain-wilkinson-individual-project
+mclain-wilkinson-individual-project
 
-This folder contains the description of maclain's work.
+* This folder contains the description of mclain's work.
 
-* ruonan-jia-individual-project
+ruonan-jia-individual-project
 
-This folder contains the description of ruonan's work.
+* This folder contains the description of ruonan's work.
 
