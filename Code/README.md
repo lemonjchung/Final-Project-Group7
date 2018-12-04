@@ -5,7 +5,7 @@
 - PyTorch
 - Nividia GPU 
 
-## Tutorials
+## How to run the network using the preprocessed data
 1. Install h5py:
 ```
 pip3 install h5py
@@ -15,7 +15,11 @@ pip3 install h5py
 wget https://s3.amazonaws.com/food-classification-datasets/food_train.h5
 wget https://s3.amazonaws.com/food-classification-datasets/food_test.h5
 ```
-3.Run the following commands to train a CNN model and test images:
+3.Run the following command to train the CNN model and make predictions on test images:
 ```
 python3 food_CNN.py
 ```
+
+## Other code
+1. create_dataset.py
+- script used to create preprocessed training and testing database (food_train.h5 & food_test.h5) files from jpeg images found on Kaggle website (www.kaggle.com/kmader/food41)
